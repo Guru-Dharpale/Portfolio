@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="icon" href="images/portfolio.png" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <script defer="" src="js/menu.js"></script>
+    <script defer="" src="js/email.js"></script>
+    <title>Guruprasad-Dharpale</title>
+  </head>
+  <body class="flex min-w-full flex-col items-center text-white bg-zinc-900">
+    <aside
+      id="socials"
+      class="fixed left-0 top-1/3 z-10 hidden flex-col justify-center p-5 lg:flex"
+    >
+      <div id="socials-container" class="flex flex-col gap-5">
+        <a
+          href="http://www.linkedin.com/in/guruprasad15"
+          target="_blank"
+        >
+          <img
+            src="images/linkedin.png"
+            alt="linked"
+            class="h-auto w-8 cursor-pointer rounded-lg duration-300 hover:scale-110 hover:bg-blue-700 hover:transition-all"
+          />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img
+            src="images/twitter.png"
+            alt="twitter"
+            class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-cyan-600 hover:transition-all"
+          />
+        </a>
+        <a href="https://github.com/Guru-Dharpale" target="_blank">
+          <img
+            src="images/footer-github.png"
+            alt="github"
+            class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-purple-500 hover:transition-all"
+          />
+        </a>
+
+        <a href="mailto:mrajaypawar207@gmail.com" target="_blank">
+          <img
+            src="images/mail.png"
+            alt="mail"
+            class="h-auto w-8 cursor-pointer rounded-full duration-300 hover:scale-110 hover:bg-red-600 hover:transition-all"
+          />
+        </a>
+      </div>
+    </aside>
+    <header
+      class="fixed top-0 z-10 flex h-20 min-w-full justify-center p-2 text-lg text-gray-300 sm:h-24"
+    >
+      <div class="header-hero flex w-4/5 items-center justify-between">
+        <img id="logo" src="images/Logo.png" alt="logo" class="block h-full" />
+        <img
+          id="menu"
+          src="images/menu.svg"
+          alt="menu"
+          class="block h-1/2 hover:cursor-pointer lg:hidden"
+        />
+        <nav id="navbar" class="hidden gap-8 text-xl lg:flex">
+          <a
+            href="index.html"
+            class="transition-all duration-300 hover:scale-x-105 hover:text-blue-300 hover:ease-in-out"
+            >Home
+          </a>
+          <a
+            href="#about-me"
+            class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
+            >About
+          </a>
+          <a
+            href="#tech-stack"
+            class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
+            >Tech Stack
+          </a>
+          <a
+            href="#projects"
+            class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
+            >Projects
+          </a>
+          <a
+            href="#contact"
+            class="transition-all duration-300 hover:scale-105 hover:text-blue-300 hover:ease-in-out"
+            >Contact
+          </a>
+        </nav>
+      </div>
+      <div
+        id="dropdownMenu"
+        class="animate_animated animate__slideInDown fixed top-0 left-0 z-20 hidden h-screen w-full flex-col items-center text-3xl lg:hidden"
+      >
+        <ul id="links" class="toggle-list w-4/5">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#about-me">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="flex min-h-screen min-w-full flex-col items-center">
+      <section
+        id="hero"
+        class="flex w-3/4 flex-col items-center justify-center pt-12 md:pt-24 lg:min-w-full"
+      >
+        <div id="hero-wrap" class="flex justify-center lg:gap-16">
+          <div id="intro" class="mx-auto flex flex-col justify-center">
+            <h2
+              class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl"
+            >
+              Hi,
+            </h2>
+            <h2
+              class="animate__animated animate__fadeInUp text-2xl sm:text-3xl md:text-4xl"
+            >
+              My name is
+            </h2>
+            <h3
+              id="name"
+              class="animate__animated animate__fadeInUp pt-1 pb-1 text-5xl sm:text-6xl md:text-7xl"
+            >
+              Guruprasad Dharpale
+            </h3>
+            <p
+              class="animate__animated animate__fadeInUp pt-3 text-2xl sm:text-3xl md:text-5xl"
+            >
+              I develop things for web!
+            </p>
+            <div class="flex flex-row gap-8">
+
+              <button
+              id="contactMe"
+              class="animate__animated animate__zoomIn mt-5 flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl"
+              >
+              <a href="#contact">CONTACT ME</a>
+            </button>
+            <button
+            id="contactMe"
+            class="animate__animated animate__zoomIn mt-5 flex h-10 w-40 items-center justify-center rounded-3xl border-2 to-transparent p-2 text-center text-lg md:h-14 md:w-60 md:text-2xl"
+            >
+            <a href="https://drive.google.com/file/d/14KgetZ5B1f3Wjpiv019uxSW88GD6MyYt/view?usp=sharing">MY RESUME</a>
+          </button>
+        </div>
+          </div>
+          <figure
+            class="animate__animated animate__fadeInRight flex flex-col justify-center"
+          >
+            <img
+              src="images/working-removebg-preview.png"
+              alt="hero"
+              class="hidden max-w-xm xl:block"
+            />
+          </figure>
+        </div>
+      </section>
+      <section
+        id="about-me"
+        class="flex w-full flex-col items-center justify-center gap-8 p-8"
+      >
+        <div class="aboutCard mx-auto min-h-full w-full sm:w-4/6">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl" id="about-me-caption">
+            About Me
+          </h2>
+        </div>
+        <div class="aboutCard min-h-full w-full sm:w-4/6">
+          <p class="text-lg sm:text-xl md:text-3xl lg:text-2xl">
+            Hi, I'm Guruprasad an enthusiastic Softwere developer from Pune. I'm
+            currently in my final year studying Computer Application at
+            <span class="font-bold">Fergusson College, Pune</span>. Over the
+            past 4 years, I've immersed myself in web development, gaining solid
+            proficiency in
+            <span class="font-bold"
+              >HTML, CSS, JavaScript,React.js,Java,Spring Boot</span
+            >. I've worked on numerous personal projects. I'm committed to
+            continuous learning and development, and I'm excited to apply my
+            skills to new opportunities in the future.
+          </p>
+        </div>
+        <div class="w-full sm:w-4/6">
+          <button
+            class="mx-auto h-10 w-40 rounded-2xl border-2 border-blue-400 bg-transparent text-lg text-blue-200 sm:h-14 sm:w-52 sm:text-2xl"
+          >
+            <a href="#contact">CONTACT</a>
+          </button>
+        </div>
+      </section>
+      <section
+        id="tech-stack"
+        class="flex min-w-full flex-col items-center justify-center"
+      >
+        <h1 class="text-3xl sm:text-4xl md:text-5xl" id="tech-stack-caption">
+          My Tech Stack
+        </h1>
+        <!-- <p class="p-2 pt-5 text-center text-2xl text-gray-300">
+          Technologies I've been working with currently
+        </p> -->
+        <div
+          id="stacks"
+          class="z-0 grid w-3/4 grid-flow-col grid-rows-2 place-content-center gap-x-9 p-5"
+        >
+          <img
+            src="images/html.png"
+            alt="ts-1"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/css.png"
+            alt="ts-2"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/js.png"
+            alt="ts-3"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/tailwind.png"
+            alt="ts-4"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/react.png"
+            alt="ts-8"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/Node.js.png"
+            alt="ts-5"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/vs.png"
+            alt="ts-6"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/footer-github.png"
+            alt="ts-7"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/AWS.png"
+            alt="ts-8"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/Java.png"
+            alt="ts-9"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+          <img
+            src="images/Spring.png"
+            alt="ts-10"
+            loading="lazy"
+            class="sm:scale-75"
+          />
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="relative flex min-w-full flex-col items-center gap-4 p-5"
+      >
+        <div id="caption-projects" class="text-center">
+          <p class="text-3xl sm:text-4xl md:text-5xl" id="projects-heading">
+            My Projects
+          </p>
+          <p class="p-3 text-xl text-gray-300 sm:text-2xl">
+            Things I've built so far
+          </p>
+        </div>
+        <div
+          id="project-container"
+          class="flex w-4/5 flex-wrap place-content-center justify-center gap-10"
+        >
+          <div class="">
+            <img src="" alt="" />
+            <h2 class="mx-3 pt-1 text-xl font-bold underline-offset-1">
+              Project 1
+            </h2>
+            <div
+              class="projectLinkContainer flex w-full items-center justify-between px-4"
+            >
+              <a href="">
+                <p class="underline">View Project</p>
+              </a>
+              <a href="">
+                <img src="images/footer-github.png" alt="" />
+              </a>
+            </div>
+            <p class="text- m-1 w-4/5 text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint cum
+              natus perferendis
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="flex min-h-screen w-full flex-col items-center justify-center p-6"
+      >
+        <h2 class="text-3xl sm:text-4xl md:text-5xl">Get in Touch</h2>
+        <p class="pt-4 text-center text-2xl text-gray-300">
+          I'd love to hear from you!
+        </p>
+        <section
+          id="form-container"
+          class="flex flex-wrap items-center justify-center xl:gap-4"
+        >
+          <form id="email-form">
+            <label for="fullName">Full Name:</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Your Name"
+              required=""
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email ID"
+              required=""
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message..."
+              required=""
+            ></textarea>
+
+            <button
+              type="button"
+              id="submit-btn"
+              class="items-center justify-center"
+            >
+              Submit
+            </button>
+          </form>
+          <figure
+            class="m-4 hidden flex-col items-center justify-center lg:flex"
+          >
+            <img
+              src="images/contact.png"
+              alt="contact"
+              class="hidden max-h-full max-w-full xl:block"
+            />
+          </figure>
+        </section>
+        <img
+          src="images/my-socials.png"
+          alt="my-socials"
+          class="mx-auto block lg:hidden h-72"
+        />
+      </section>
+      <footer
+        class="flex h-15 w-4/5 items-center justify-center p-5 text-gray-200 sm:justify-between"
+      >
+        <p class="hidden sm:inline">
+          dharpaleguru@gmail.com
+                                                                                                          
+          Design inspired by : Tanpreet Singh Jolly<br />
+          P.S. - All designs and images are used for educational purposes. We do
+          not intend to earn money using copyrighted products. <br />They are
+          just used for skills presentation. <br />
+          Peace Out...🕊
+        </p>
+
+        <div id="footer-img-wrap" class="flex gap-2">
+          <a href="https://github.com/Guru-Dharpale" target="_blank">
+            <img src="images/footer-github.png" alt="github" class="h-9 w-9" />
+          </a>
+          <a
+            href="http://www.linkedin.com/in/guruprasad15"
+            target="_blank"
+          >
+            <img src="images/linkedin.png" alt="linkedin" class="h-9 w-9" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="images/twitter.png" alt="twitter" class="h-9 w-9" />
+          </a>
+        </div>
+      </footer>
+      <script type="text/javascript" src="js/email.min.js"></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("iDj4CZfZL3uVw9Xy2");
+        })();
+      </script>
+    </main>
+  </body>
+</html>
